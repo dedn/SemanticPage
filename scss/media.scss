@@ -1,0 +1,188 @@
+// @import "bourbon";
+
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px) {
+
+  /**/
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+
+  //.button_container {
+  //  position: fixed;
+  //  top: 37px;
+  //  right: 30px;
+  //  height: 30px;
+  //  width: 30px;
+  //  cursor: pointer;
+  //  z-index: 100;
+  //  transition: opacity .25s ease;
+  //  &:hover {
+  //    opacity: .7;
+  //  }
+  //
+  //  &.active {
+  //    opacity: .5;
+  //    .top {
+  //      transform: translateY(11px) translateX(0) rotate(45deg);
+  //      background: black;
+  //    }
+  //    .middle {
+  //      opacity: 0;
+  //      background: black;
+  //    }
+  //
+  //    .bottom {
+  //      transform: translateY(-11px) translateX(0) rotate(-45deg);
+  //      background: black;
+  //    }
+  //  }
+  //
+  //  span {
+  //    background: #9cd0ec;
+  //    border: none;
+  //    height: 5px;
+  //    width: 100%;
+  //    position: absolute;
+  //    top: 0;
+  //    left: 0;
+  //    transition: all .35s ease;
+  //    cursor: pointer;
+  //
+  //    &:nth-of-type(2) {
+  //      top: 11px;
+  //    }
+  //
+  //    &:nth-of-type(3) {
+  //      top: 22px;
+  //    }
+  //  }
+  //}
+  //
+  //nav {
+  //  position: fixed;
+  //  top: 0;
+  //  left: 0;
+  //  width: 100%;
+  //  height: 0;
+  //  opacity: 0;
+  //  visibility: hidden;
+  //  transition: opacity .35s, visibility .35s, height .35s;
+  //  overflow: hidden;
+  //  z-index:1;
+  //
+  //  &.open {
+  //    opacity: .9;
+  //    visibility: visible;
+  //    height: 100%;
+  //    background: #ccc;
+  //
+  //    li {
+  //      animation: fadeInRight .5s ease forwards;
+  //      animation-delay: .35s;
+  //
+  //      &:nth-of-type(2) {
+  //        animation-delay: .4s;
+  //      }
+  //      &:nth-of-type(3) {
+  //        animation-delay: .5s;
+  //      }
+  //      &:nth-of-type(4) {
+  //        animation-delay: .6s;
+  //      }
+  //      &:nth-of-type(5) {
+  //        animation-delay: .7s;
+  //      }
+  //      &:nth-of-type(6) {
+  //        animation-delay: .8s;
+  //      }
+  //      &:nth-of-type(7) {
+  //        animation-delay: .9s;
+  //      }
+  //    }
+  //  }
+  //}
+  //
+  //.main-nav {
+  //  float: none;
+  //  margin-right: 0;
+  //  margin-top: 110px;
+  //  text-align: center;
+  //  li {
+  //    display: block;
+  //    opacity: 0;
+  //  }
+  //  a {
+  //    display: block;
+  //    margin: 35px;
+  //    font-size: 24px;
+  //    color: rgba(0, 0, 0, 0.5);
+  //    transition: .4s;
+  //    &:hover {
+  //      font-weight: 600;
+  //      color: black;
+  //    }
+  //  }
+  //}
+  //@keyframes fadeInRight {
+  //  0% {
+  //    opacity: 0;
+  //    left: 20%;
+  //  }
+  //  100% {
+  //    opacity: 1;
+  //    left: 0;
+  //  }
+  //}
+  /**/
+
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+
+
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 320px) {
+  /**/
+}
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width: 320px) {
+  /**/
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width: 480px) {
+  /**/
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width: 768px) {
+  /**/
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width: 992px) {
+
+  /**/
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width: 1200px) {
+  /**/
+}
