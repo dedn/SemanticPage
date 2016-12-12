@@ -1,0 +1,57 @@
+html,body                       { width:100%; height:100%; box-sizing: border-box; font-size: 100% }
+body                            { padding:0; margin:0; font:16px 'Roboto', sans-serif; background:#465e78; color: #475055; line-height: 1; }
+*, *:before, *:after { box-sizing: border-box; }
+.main-container{
+  width: 1180px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+ul{
+  list-style-type:none ;
+}
+a{
+  text-decoration: none;
+}
+input, textarea{
+  outline: none;
+}
+a :hover,  a:focus, a:active,  input:hover, input:focus  {
+  transition:0.2s;
+}
+//div,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,fieldset,label,select,checkbox,input,textarea {
+//  padding:0;
+//  margin:0;
+//  outline:none;
+//  list-style:none;
+//}
+
+
+.clearfix:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+.hidden{
+  display: none;
+}
+img{
+  max-width: 100%;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+}
+
+$purple: #a63859;
+$main-text-color:#475055;
+$accent: #56ccc8;
+$accent-btn: #e8a143;
+

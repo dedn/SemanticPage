@@ -1,0 +1,144 @@
+.page-header {
+  padding-top: 1rem;
+}
+
+.page-header__logo {
+  margin: 0 auto 2rem;
+  max-width: 10rem;
+  &:hover {
+    opacity: .7;
+  }
+}
+
+.navigation {
+  display: flex;
+  align-content: flex-start;
+  height: 3.75rem;
+  background: white;
+}
+
+.menu-btn {
+  display: block;
+  width: 3.75rem;
+  height: 3.75rem;
+  background-color: #56ccc8;
+  border-right: 1px solid white;
+  cursor: pointer;
+  text-align: center;
+  .icon-menu2 {
+    color: white;
+    font-size: 2rem;
+    line-height: 3.75rem;
+  }
+  &:hover {
+    background-color: white;
+    .icon-menu2 {
+      color: #56ccc8;
+    }
+  }
+}
+
+.main-nav {
+  margin-right: 8%;
+  ul {
+    width: 24*1.25rem;
+    height: 3.75rem;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+  }
+}
+
+.main-nav__items {
+  a {
+    line-height: 1.125rem;
+    color: #475055;
+    &:hover {
+      color: #56ccc8;
+    }
+  }
+}
+
+.search-page {
+  display: flex;
+  position: relative;
+  margin: auto 0;
+
+}
+
+.search-page__field {
+  margin-right: 10px;
+  padding: 0 25px 0 5px;
+  height: 2rem;
+  width: 15rem;
+  border: none;
+  border-bottom: 1px solid silver;
+
+  &:focus {
+    border: none;
+    box-shadow: 1px 1px 3px rgba(86, 204, 200, .8)
+  }
+}
+
+.search-page__submit {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 15px;
+  height: 16px;
+  width: 16px;
+  border: none;
+  background: url("../img/search_static.png") no-repeat;
+  background-size: 16px;
+  &:hover {
+    background: url("../img/search_activ.png") no-repeat;
+    background-size: 16px;
+  }
+
+}
+
+.social-link-set {
+  display: flex;
+  justify-content: space-between;
+  width: 3.75*3;
+  margin: 0 0 0 1.5rem;
+  padding: 0;
+  height: 100%;
+  border-right: 1px solid #dde2e4;
+  border-left: 1px solid #dde2e4;
+
+}
+
+.social-link-set__item {
+  line-height: 3.75rem;
+  a {
+    display: block;
+    width: 3.75rem;
+    height: 100%;
+    color: #b2b9bd;
+    text-align: center;
+    &:hover {
+      color: #fff;
+      background: #56ccc8;
+    }
+  }
+}
+
+.user {
+  margin: 0 auto;
+  a {
+    width: 4.4rem;
+    display: block;
+    color: #b2b9bd;
+    line-height: 3.75rem;
+    text-align: center;
+    &:hover {
+      color: #fff;
+      background: #56ccc8;
+    }
+  }
+}
+
+

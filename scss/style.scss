@@ -1,6 +1,8 @@
 // @import "bourbon";
-@import "includes/_reset.scss";
-@import "includes/_footer.scss";
+@import "includes/header";
+@import "includes/general_style";
+@import "includes/_footer";
+@import "includes/_normalize";
 
 //Load Libs SASS
 
