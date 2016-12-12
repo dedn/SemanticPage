@@ -1,8 +1,10 @@
-// @import "bourbon";
-@import "includes/header";
+
+@import "includes/normalize";
 @import "includes/general_style";
-@import "includes/_footer";
-@import "includes/_normalize";
+@import "includes/header";
+@import "includes/navigation_section";
+@import "includes/footer";
+
 
 //Load Libs SASS
 

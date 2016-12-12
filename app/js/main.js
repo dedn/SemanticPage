@@ -249,15 +249,15 @@
 // });
 
 
-$(document).ready(function () {
-
-    $(".search-page__submit").click(function () {
-        var timeout = 3000;
-        mergerAnimate();
-        function mergerAnimate() {
-            $(".search-page__field").animate({width: 160}, timeout, "swing");
-        }
-    });
-});
-
-
+// $(document).ready(function () {
+//
+//     $(".search-page__submit").click(function () {
+//         var timeout = 3000;
+//         mergerAnimate();
+//         function mergerAnimate() {
+//             $(".search-page__field").animate({width: 160}, timeout, "swing");
+//         }
+//     });
+// });
+//
+//

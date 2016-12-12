@@ -33,9 +33,32 @@ i, .icomoon-liga {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
-.icon-menu2:before {
-  content: "\e902";
+.icon-linkedin:before {
+  content: "\e907";
+}
+.icon-location:before {
+  content: "\e906";
+}
+.icon-phone:before {
+  content: "\e905";
+}
+.icon-telephone:before {
+  content: "\e905";
+}
+.icon-contact:before {
+  content: "\e905";
+}
+.icon-support:before {
+  content: "\e905";
+}
+.icon-call:before {
+  content: "\e905";
+}
+.icon-pencil:before {
+  content: "\e904";
+}
+.icon-trophy:before {
+  content: "\e903";
 }
 .icon-menu:before {
   content: "\e901";
@@ -73,4 +96,6 @@ i, .icomoon-liga {
 .icon-pinterest2:before {
   content: "\ead2";
 }
-
+.icon-menu2:before {
+  content: "\e902";
+}

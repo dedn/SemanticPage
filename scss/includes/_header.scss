@@ -65,7 +65,6 @@
   display: flex;
   position: relative;
   margin: auto 0;
-
 }
 
 .search-page__field {
@@ -96,7 +95,6 @@
     background: url("../img/search_activ.png") no-repeat;
     background-size: 16px;
   }
-
 }
 
 .social-link-set {
@@ -108,7 +106,6 @@
   height: 100%;
   border-right: 1px solid #dde2e4;
   border-left: 1px solid #dde2e4;
-
 }
 
 .social-link-set__item {
@@ -127,9 +124,9 @@
 }
 
 .user {
-  margin: 0 auto;
+  max-width: 4.5rem;
   a {
-    width: 4.4rem;
+    width: 4.5rem;
     display: block;
     color: #b2b9bd;
     line-height: 3.75rem;
