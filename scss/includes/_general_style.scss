@@ -50,6 +50,15 @@ img{
   overflow: hidden;
 }
 
+.main-container{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+}
+
+
+
 $purple: #a63859;
 $main-text-color:#475055;
 $accent: #56ccc8;
