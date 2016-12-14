@@ -11,10 +11,12 @@
 }
 
 .navigation {
+
   display: flex;
   align-content: flex-start;
   height: 3.75rem;
   background: white;
+  margin: 0 auto;
 }
 
 .menu-btn {
@@ -39,13 +41,15 @@
 }
 
 .main-nav {
+  display: flex;
   margin-right: 8%;
+  flex-basis: 41%;
   ul {
-    width: 24*1.25rem;
+    width: 100%;
     height: 3.75rem;
     list-style-type: none;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     margin: auto;
   }
@@ -136,6 +140,211 @@
       background: #56ccc8;
     }
   }
+}
+
+
+@media only screen and (max-width: 992px) {
+  .menu-btn {
+    background: white;
+   .icon-menu2 {
+    color: white;
+    font-size: 0;
+  }
+  }
+  .search-page{
+    padding-left: 10%;
+  }
+  .button-container {
+    position: fixed;
+    padding: 1rem;
+    top: 143px;
+    left: 10px;
+    width: 3.75rem;
+    height: 3.75rem;
+    cursor: pointer;
+    z-index: 100;
+    transition: opacity .25s ease;
+    background-color: #56ccc8;
+    &:hover {
+      opacity: .7;
+    }
+
+    &.active {
+      opacity: .5;
+      .top {
+        transform: translateY(11px) translateX(0) rotate(45deg);
+        background: black;
+      }
+      .middle {
+        opacity: 0;
+        background: black;
+      }
+
+      .bottom {
+        transform: translateY(-11px) translateX(0) rotate(-45deg);
+        background: black;
+      }
+    }
+
+    span {
+      background: #fff;
+      border: none;
+      height: 3px;
+      width: 30px;
+      position: absolute;
+      top: 18px;
+      left: 15px;
+      transition: all .35s ease;
+      cursor: pointer;
+
+      &:nth-of-type(2) {
+        top: 29px;
+      }
+
+      &:nth-of-type(3) {
+        top: 40px;
+      }
+    }
+  }
+
+  .main-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .35s, visibility .35s, height .35s;
+    overflow: hidden;
+    z-index:1;
+
+    &.open {
+      opacity: .9;
+      visibility: visible;
+      height: 100%;
+      background: #56ccc8;
+
+      li {
+        animation: fadeInRight .5s ease forwards;
+        animation-delay: .35s;
+
+        &:nth-of-type(2) {
+          animation-delay: .4s;
+        }
+        &:nth-of-type(3) {
+          animation-delay: .5s;
+        }
+        &:nth-of-type(4) {
+          animation-delay: .6s;
+        }
+        &:nth-of-type(5) {
+          animation-delay: .7s;
+        }
+        &:nth-of-type(6) {
+          animation-delay: .8s;
+        }
+        &:nth-of-type(7) {
+          animation-delay: .9s;
+        }
+      }
+    }
+  }
+
+  .main-nav ul {
+    margin-right: 0;
+    margin-top: 320px;
+    text-align: center;
+    flex-direction: column;
+    li {
+      display: block;
+      opacity: 0;
+    }
+    a {
+      display: block;
+      margin: 35px;
+      font-size: 24px;
+      color: rgba(0, 0, 0, 0.5);
+      transition: .4s;
+      &:hover {
+        font-weight: 600;
+        color: black;
+      }
+    }
+  }
+  @keyframes fadeInRight {
+    0% {
+      opacity: 0;
+      left: 20%;
+    }
+    100% {
+      opacity: 1;
+      left: 0;
+    }
+  }
+  /**/
+
+
+}
+
+@media only screen and (max-width: 768px) {
+
+  .search-page{
+    padding-left: 1%;
+  }
+  .button-container {
+    top: 60px;
+  }
+  .social-link-set {
+    margin: 0 0 0 .5rem;
+  }
+  .search-page__field {
+    width:100%;
+    height: 3.65rem;
+  }
+  .menu-btn {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+.button-container{
+  top:30px;
+}
+  .search-page__field{
+    margin-right:0;
+  }
+  .navigation{
+    display: block;
+    height: 7.4rem;
+  }
+  .social-link-set{
+    margin:0;
+    float: left;
+    height: auto;
+    justify-content: center;
+    border: none;
+    a{
+      height: 3.75rem;
+    }
+  }
+  .user{
+    float: right;
+  }
+
+  .search-page__submit{
+    width:25px;
+    height: 25px;
+    background-size:25px;
+    &:hover{
+      background-size:25px;
+    }
+  }
+
+  .page-header__logo{
+    margin-bottom:1rem;
+  }
+
 }
 
 

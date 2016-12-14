@@ -1,5 +1,11 @@
 $(document).ready(function () {
 
+
+    $('#toggle').click(function () {
+        $(this).toggleClass('active');
+        $('nav').toggleClass('open');
+    });
+
     // Variables
     var clickedTab = $(".tabs > .active");
     var tabWrapper = $(".tab-content");
@@ -45,3 +51,8 @@ $(document).ready(function () {
         $(".text-color").css("color", newColor);
     });
 });
+
+
+
+
+
