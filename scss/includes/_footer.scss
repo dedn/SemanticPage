@@ -1,15 +1,24 @@
 .footer {
-  margin-top:1rem;
+  margin-top: 1rem;
   padding: 1rem 3rem 0 0;
   display: flex;
   justify-content: space-between;
   background: white;
+  @media only screen and (max-width: 768px) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+  }
 }
 
 .footer-nav {
-  margin-top:1.5rem;
+  margin-top: 1.5rem;
   li {
     display: inline-block;
+  }
+  @media only screen and (max-width: 768px) {
+    padding-left: 0;
   }
 }
 
@@ -30,11 +39,13 @@
   li {
     display: inline-block;
   }
+  @media only screen and (max-width: 768px) {
+    padding-left: 0;
+  }
 }
 
-
-.footer-social__items:not(:last-child){
-  margin-right:1rem;
+.footer-social__items:not(:last-child) {
+  margin-right: 1rem;
 }
 
 .footer-social__items {

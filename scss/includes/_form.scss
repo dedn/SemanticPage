@@ -17,6 +17,17 @@
   fieldset {
     margin-bottom: 2rem;
   }
+  @media only screen and (max-width: 480px) {
+    padding: 0;
+    padding-bottom: 2rem;
+    dd {
+      padding-left: 0;
+      margin-left: 0;
+      input {
+        width: 100%;
+      }
+    }
+  }
 }
 
 .form-about__title {
@@ -35,9 +46,17 @@
     min-width: 5rem;
     margin-right: 1rem;
     cursor: pointer;
+
+    @media only screen and (max-width: 480px) {
+      margin-bottom: .5rem;
+      padding-bottom: .5rem;
+      display: block;
+      padding-top: .5rem;
+    }
   }
   input[type="text"] {
     @include decor-input;
+
   }
 }
 
@@ -138,6 +157,9 @@
 
   @include decor-input;
   height: 10rem;
+  @media only screen and (max-width: 480px) {
+    min-width: 100%;
+  }
 }
 
 .selection-block__title {
@@ -210,4 +232,13 @@
     background: white;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, .4);
   }
+  @media only screen and (max-width: 480px) {
+   margin: 0 auto;
+    text-align: center;
+    width: 100%;
+  }
+  @media only screen and (max-width: 320px) {
+    width: 100%;
+  }
+
 }
