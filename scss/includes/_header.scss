@@ -11,7 +11,6 @@
 }
 
 .navigation {
-
   display: flex;
   align-content: flex-start;
   height: 3.75rem;
@@ -42,8 +41,8 @@
 
 .main-nav {
   display: flex;
-  margin-right: 8%;
   flex-basis: 41%;
+  margin-right: 8%;
   ul {
     width: 100%;
     height: 3.75rem;
@@ -78,7 +77,6 @@
   width: 15rem;
   border: none;
   border-bottom: 1px solid silver;
-
   &:focus {
     border: none;
     box-shadow: 1px 1px 3px rgba(86, 204, 200, .8)
@@ -105,9 +103,9 @@
   display: flex;
   justify-content: space-between;
   width: 3.75*3;
+  height: 100%;
   margin: 0 0 0 1.5rem;
   padding: 0;
-  height: 100%;
   border-right: 1px solid #dde2e4;
   border-left: 1px solid #dde2e4;
 }
@@ -142,16 +140,15 @@
   }
 }
 
-
 @media only screen and (max-width: 992px) {
   .menu-btn {
     background: white;
-   .icon-menu2 {
-    color: white;
-    font-size: 0;
+    .icon-menu2 {
+      color: white;
+      font-size: 0;
+    }
   }
-  }
-  .search-page{
+  .search-page {
     padding-left: 10%;
   }
   .button-container {
@@ -183,7 +180,6 @@
         background: black;
       }
     }
-
     span {
       background: #fff;
       border: none;
@@ -214,7 +210,7 @@
     visibility: hidden;
     transition: opacity .35s, visibility .35s, height .35s;
     overflow: hidden;
-    z-index:1;
+    z-index: 1;
 
     &.open {
       opacity: .9;
@@ -246,7 +242,6 @@
       }
     }
   }
-
   .main-nav ul {
     padding-left: 0;
     margin-right: 0;
@@ -279,13 +274,9 @@
       left: 0;
     }
   }
-  /**/
-
-
 }
 
 @media only screen and (max-width: 768px) {
-
   .search-page{
     padding-left: 1%;
   }
@@ -306,43 +297,42 @@
 }
 
 @media only screen and (max-width: 480px) {
-.button-container{
-  top:30px;
-}
-  .search-page__field{
-    margin-right:0;
+  .button-container {
+    top: 30px;
   }
-  .navigation{
+  .search-page__field {
+    margin-right: 0;
+  }
+  .navigation {
     display: block;
     height: 7.4rem;
   }
-  .social-link-set{
-    margin:0;
+  .social-link-set {
+    margin: 0;
     float: left;
     height: auto;
     justify-content: center;
     border: none;
-    a{
+    a {
       height: 3.75rem;
     }
   }
-  .user{
+  .user {
     float: right;
   }
 
-  .search-page__submit{
-    width:25px;
+  .search-page__submit {
+    width: 25px;
     height: 25px;
-    background-size:25px;
-    &:hover{
-      background-size:25px;
+    background-size: 25px;
+    &:hover {
+      background-size: 25px;
     }
   }
 
-  .page-header__logo{
-    margin-bottom:1rem;
+  .page-header__logo {
+    margin-bottom: 1rem;
   }
-
 }
 
 

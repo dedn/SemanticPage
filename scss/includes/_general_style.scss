@@ -16,32 +16,16 @@ body                            { padding:0; margin:0; font:16px 'Roboto', sans-
     padding: 0;
   }
 }
-ul{
-  list-style-type:none ;
-}
-a{
-  text-decoration: none;
-}
-input, textarea{
-  outline: none;
-}
-a :hover,  a:focus, a:active,  input:hover, input:focus  {
-  transition:0.2s;
-}
+ul{ list-style-type:none; }
+a{ text-decoration: none; }
+input, textarea{ outline: none; }
+a :hover,  a:focus, a:active,  input:hover, input:focus  { transition:0.2s;}
 
+.clearfix:after { content: " "; display: block; clear: both; }
 
-.clearfix:after {
-  content: " ";
-  display: block;
-  clear: both;
-}
+.hidden{ display: none; }
 
-.hidden{
-  display: none;
-}
-img{
-  max-width: 100%;
-}
+img{ max-width: 100%; }
 
 .visually-hidden {
   position: absolute;
@@ -54,11 +38,7 @@ img{
   overflow: hidden;
 }
 
-
-
-
-$purple: #a63859;
 $main-text-color:#475055;
 $accent: #56ccc8;
-$accent-btn: #e8a143;
+
 

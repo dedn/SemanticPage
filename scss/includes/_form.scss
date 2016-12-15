@@ -23,7 +23,7 @@
     dd {
       padding-left: 0;
       margin-left: 0;
-      input {
+      input[type="text"],input[type="email"] {
         width: 100%;
       }
     }
@@ -46,7 +46,6 @@
     min-width: 5rem;
     margin-right: 1rem;
     cursor: pointer;
-
     @media only screen and (max-width: 480px) {
       margin-bottom: .5rem;
       padding-bottom: .5rem;
@@ -56,21 +55,27 @@
   }
   input[type="text"] {
     @include decor-input;
-
   }
 }
 
 .form-about__items--position {
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   label {
     padding-left: 2.2rem;
     padding-right: .5rem;
     cursor: pointer;
-  }
+    @media only screen and (max-width: 480px){
+      padding-left:0;
+    }
+   }
   input {
     margin-right: .5rem;
     cursor: pointer;
   }
 }
+
 
 .more-about__title {
   margin-bottom: 1.5rem;
@@ -88,6 +93,9 @@
   input[type="text"] {
     margin-right: .5rem;
     @include decor-input;
+    @media only screen and (max-width: 480px){
+      margin-bottom:.5rem;
+    }
   }
 }
 
@@ -115,6 +123,11 @@
 .usual-things__items {
   margin-bottom: .5rem;
   margin-left: 0;
+  @media only screen and (max-width: 480px){
+    input{
+      width: 1rem;
+    }
+  }
 }
 
 .often-work__title {
@@ -133,14 +146,13 @@
 
 .often-read__title {
   display: block;
-  font-weight: 400;
   margin-bottom: 1rem;
+  font-weight: 400;
 }
 
 .often-read__items {
   margin-left: 0;
   margin-bottom: .5rem;
-
 }
 
 .comments {
@@ -154,9 +166,9 @@
 }
 
 .comments__textarea {
-
   @include decor-input;
   height: 10rem;
+  width: 25rem;
   @media only screen and (max-width: 480px) {
     min-width: 100%;
   }
@@ -240,5 +252,4 @@
   @media only screen and (max-width: 320px) {
     width: 100%;
   }
-
 }
