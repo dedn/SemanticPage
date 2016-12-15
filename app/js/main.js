@@ -3,7 +3,7 @@ $(document).ready(function () {
     $('#toggle').click(function () {
         $(this).toggleClass('active');
         $('nav').toggleClass('open');
-    });
+       });
 
     // Tabs
     var clickedTab = $(".tabs > .active");
