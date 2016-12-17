@@ -1,7 +1,4 @@
 # SemanticPage
-Bootstrap Sass
-Mixins or @extend for classes bootstrap
-The names of the classes according to BEM
 
 
 ### Project structure
