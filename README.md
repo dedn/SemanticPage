@@ -1,9 +1,8 @@
 # SemanticPage
-In this task, I have tried to stick to the philosophy of BEM avoided selectors outside of classes, reduced investments. And I try to make as much as possible independent blocks. Used to modify the block name Nicholas Gallagher.
+Bootstrap Sass
+Mixins or @extend for classes bootstrap
+The names of the classes according to BEM
 
-I added blocks compared with TASK to try BEM and train in the semantics.
-
-Preview http://dedn.github.io/semantic_page/
 
 ### Project structure
      app /                                   :complete application   
