@@ -2,33 +2,33 @@
 
 <form class="form" method="post">
 	<fieldset class="form-about">
-		<dl>
-			<dt class="form-about__title"><legend>About You:</legend></dt>
-			<dd class="form-about__items"><label for="firstname">Name: </label><input type="text" name="firstname" id="firstname"></dd>
-			<dd class="form-about__items"><label for="lastname">Surname: </label><input type="text" name="lastname" id="lastname"></dd>
-			<dd class="form-about__items form-about__items--position"> Gender: <label><input type="radio" name="man_or_woman" value="man" checked="checked" class="input"/>Male</label><label><input type="radio" name="man_or_woman" value="woman"/>Female </label></dd>
-			<dd class="form-about__items"><label for="age">Age: </label><input type="text" name="age" id="age">  <label for="age"> years</label></dd>
-		</dl>
+		<legend class="form-about__title">About You:</legend>
+		<ul>
+			<li class="form-about__items"><label for="firstname">Name: </label><input type="text" name="firstname" id="firstname"></li>
+			<li class="form-about__items"><label for="lastname">Surname: </label><input type="text" name="lastname" id="lastname"></li>
+			<li class="form-about__items form-about__items--position"> Gender: <label><input type="radio" name="man_or_woman" value="man" checked="checked" class="input"/>Male</label><label><input type="radio" name="man_or_woman" value="woman"/>Female </label></li>
+			<li class="form-about__items"><label for="age">Age: </label><input type="date" name="age" id="age">  <label for="age"> years</label></li>
+		</ul>
 	</fieldset>
 
 	<fieldset class="more-about">
-		<dl>
-			<dt class="more-about__title"><legend>More about yourself</legend></dt>
-			<dd class="more-about__items more-about__items--position"><label> Man <input type="radio" name="man_or_woman_Block_podrobney" value="man Block podrobney" checked="checked"></label> <label> Girl <input type="radio" name="man_or_woman_Block_podrobney" value="woman Block podrobney"></label></dd>
-			<dd class="more-about__items"><input type="text" name="Date_of_Birth" id="Date_of_Birth"><label for="Date_of_Birth">Date of Birth</label></dd>
-			<dd class="more-about__items"><input type="text" name="family_status" id="family_status"><label for="family_status">Family status</label></dd>
-			<dd class="more-about__items"><input type="text" name="social_status" id="social_status"><label for="social_status">Social status</label></dd>
-			<dd class="more-about__items"><input type="text" name="location" id="location"><label for="location">Location</label></dd>
-			<dd class="more-about__items">
-				<dl class="usual-things">
-					<dt class="usual-things__title">What do you usually do on weekends</dt>
-					<dd class="usual-things__items"><input type="checkbox" name="weekend[]" value="sleep" id="sleep"><label for="sleep"> Sleep </label></dd>
-					<dd class="usual-things__items"><input type="checkbox" name="weekend[]" value="Walking" id="Walking_with_friends"><label for="Walking_with_friends"> Walking with friends </label></dd>
-					<dd class="usual-things__items"><input type="checkbox" name="weekend[]" value="I go fishing" id="fishing"><label for="fishing"> I go fishing </label></dd>
-					<dd class="usual-things__items"><input type="checkbox" name="weekend[]" value="Playing games" id="play"><label for="play"> Playing games </label></dd>
-				</dl>
-			</dd>
-			<dd class="more-about__items often-work">
+		<legend class="more-about__title">More about yourself</legend>
+		<ul>
+			<li class="more-about__items more-about__items--position"><label> Man <input type="radio" name="man_or_woman_Block_podrobney" value="" checked="checked"></label> <label> Girl <input type="radio" name="man_or_woman_Block_podrobney" value="woman Block podrobney"></label></li>
+			<li class="more-about__items"> <label for="Date_of_Birth"> Date of Birth </label> <input type="datetime-local" name="Date_of_Birth" id="Date_of_Birth"> </li>
+			<li class="more-about__items"> <label for="family_status">Family status</label> <input type="text" name="family_status" id="family_status"></li>
+			<li class="more-about__items"> <label for="social_status">Social status</label> <input type="text" name="social_status" id="social_status"></li>
+			<li class="more-about__items"> <label for="location">Location</label> <input type="text" name="location" id="location"></li>
+			<li class="more-about__items">
+				<ul class="usual-things">
+					<li class="usual-things__title">What do you usually do on weekends</li>
+					<li class="usual-things__items"><input type="checkbox" name="weekend[]" value="" id="sleep"><label for="sleep"> Sleep </label></li>
+					<li class="usual-things__items"><input type="checkbox" name="weekend[]" value="" id="Walking_with_friends"><label for="Walking_with_friends"> Walking with friends </label></li>
+					<li class="usual-things__items"><input type="checkbox" name="weekend[]" value="" id="fishing"><label for="fishing"> I go fishing </label></li>
+					<li class="usual-things__items"><input type="checkbox" name="weekend[]" value="" id="play"><label for="play"> Playing games </label></li>
+				</ul>
+			</li>
+			<li class="more-about__items often-work">
 				<span class="often-work__title">You often work with forms</span>
 				<select class="often-work__item" name="select">
 					<option>Seldom</option>
@@ -36,53 +36,53 @@
 					<option>middling</option>
 					<option>Often</option>
 				</select>
-			</dd>
-			<dd class="more-about__items">
-           <dl class="often-read">
-						 <dt class="often-read__title">How many books do you read in my life:</dt>
-						 <dd class="often-read__items"><label><input type="radio" name="book" value="0-10"> 0-10 </label></dd>
-						 <dd class="often-read__items"><label><input type="radio" name="book" value="11-20"> 11-20 </label></dd>
-						 <dd class="often-read__items"><label><input type="radio" name="book" value="21-50"> 21-50 </label></dd>
-						 <dd class="often-read__items"><label><input type="radio" name="book" value="50+"> 50+ </label></dd>
-					 </dl>
-			</dd>
-			<dd class="more-about__items comments">
+			</li>
+			<li class="more-about__items">
+				<ul class="often-read">
+					<li class="often-read__title">How many books do you read in my life:</li>
+					<li class="often-read__items"><label><input type="number" name="book" value="0-10"></label></li>
+				</ul>
+			</li>
+			<li class="more-about__items comments">
 				<span class="comment_title">Your comments </span>
 				<textarea class="comments__textarea" name="textarea"></textarea>
-			</dd>
-			<dd class="more-about__items selection-block">
+			</li>
+			<li class="more-about__items selection-block">
 				<span class="selection-block__title">Selection</span>
 				<select class="selection-block__select" size="3" multiple="multiple" name="select2[]">
 					<option value="one">First:</option>
 					<option value="two" selected="selected" >Second</option>
 					<option value="three">third:</option>
 				</select>
-			</dd>
-		</dl>
+			</li>
+		</ul>
 	</fieldset>
 	<fieldset class="conclusion-form">
-		<dl>
-			<dt class="conclusion-form__title"><legend>Conclusion</legend></dt>
-			<dd class="conclusion-form__items conclusion-form__items--position"><label for="emaillabel">Email:</label><input type="email" name="email" id="emaillabel" ></dd>
-			<dd class="conclusion-form__items">
-			   <dl class="spamming">
-					 <dt class="spamming__title">Otitis subscribe to the most fashionable spamming? <span class="spamming__sub-title"> Select a category: </span></dt>
-					 <dd class="spamming__items"><input type="checkbox" name="chekboxone[]" value="Equipment" id="equipment" /><label for="equipment"> Equipment </label></dd>
-					 <dd class="spamming__items"><input type="checkbox" name="chekboxone[]" value="How to cook meals" id="lunches" /><label for="lunches"> How to cook meals </label></dd>
-					 <dd class="spamming__items"><input type="checkbox" name="chekboxone[]" value="money" id="milion" /><label for="milion"> Money</label></dd>
-				 </dl>
-			</dd>
-			<dd class="conclusion-form__items">
-				<dl class=" estimate">
-					<dt class="estimate__title">As far as hard to fill</dt>
-					<dd class="estimate__items"><label><input type="radio"  name="level" value="Easy" checked="checked" /> Easy </label></dd>
-					<dd class="estimate__items"><label><input type="radio"  name="level" value="middling" /> Middling </label></dd>
-					<dd class="estimate__items"><label><input type="radio"  name="level" value="very difficult" /> Very difficult </label></dd>
-				</dl>
-			</dd>
-		</dl>
+		<legend class="conclusion-form__title">Conclusion</legend>
+		<ul>
+			<li class="conclusion-form__items conclusion-form__items--position"><label for="emaillabel">Email:</label><input type="email" name="email" id="emaillabel" ></li>
+			<li class="conclusion-form__items">
+				<ul class="spamming">
+					<li class="spamming__title">Otitis subscribe to the most fashionable spamming? <span class="spamming__sub-title"> Select a category: </span></li>
+					<li class="spamming__items"><input type="checkbox" name="chekboxone[]" value="" id="equipment" /> <label for="equipment"> Equipment </label></li>
+					<li class="spamming__items"><input type="checkbox" name="chekboxone[]" value="" id="lunches" /> <label for="lunches"> How to cook meals </label></li>
+					<li class="spamming__items"><input type="checkbox" name="chekboxone[]" value="" id="milion" /> <label for="milion"> Money</label></li>
+				</ul>
+			</li>
+			<li class="conclusion-form__items color">
+				<label class="color__title" for="color">Favorite color</label>
+				<input class="color__body" type="color" id="color">
+			</li>
+			<li class="conclusion-form__items">
+				<ul class="estimate">
+					<li class="estimate__title">As far as hard to fill</li>
+					<li class="estimate__items"><label>Easy</label><input type="range" name="level" /> <label> Hard</label></li>
+				</ul>
+			</li>
+		</ul>
 	</fieldset>
 	<button class="form-btn" type="submit" value="submit">Submit</button>
 </form>
+
 
 #=include 'includes/_footer.html'
