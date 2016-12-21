@@ -17,9 +17,9 @@ $(document).ready(function () {
         $(this).addClass("active");
         clickedTab = $(".tabs .active");
         activeTab.fadeOut(250, function () {
-            $(".tab-content > li").removeClass("active");
+            $(".tab-content > div").removeClass("active");
             var clickedTabIndex = clickedTab.index();
-            $(".tab-content > li").eq(clickedTabIndex).addClass("active");
+            $(".tab-content > div").eq(clickedTabIndex).addClass("active");
             activeTab = $(".tab-content > .active");
             activeTabHeight = activeTab.outerHeight();
             tabWrapper.stop().delay(50).animate({

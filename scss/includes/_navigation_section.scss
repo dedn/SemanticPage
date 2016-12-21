@@ -94,15 +94,12 @@
 }
 
 .contact__items {
-
-
-    font-size: 0.875rem;
-    color: white;
-    line-height: 1rem;
-
+  font-size: 0.9rem;
+  color: white;
+  line-height: 1rem;
   address {
     padding-left: 2rem;
-    font-size: 0.875rem;
+    font-size: 0.9rem;
     color: white;
     line-height: 1.25rem;
   }
@@ -126,6 +123,7 @@
 
 .contact__icon {
   float: left;
+  padding-right: .7rem;
   i {
     font-size: 1.2rem;
     color: white;
