@@ -1,0 +1,37 @@
+@mixin decor-input {
+  height: 2rem;
+  padding: 5px;
+  box-shadow: 0 1px white, inset 0 2px 2px rgba(0, 0, 0, 0.1);
+  border: 1px solid #b1b3b8;
+  border-radius: 2px;
+  background-color: #f5f6f7;
+  &:focus {
+    background: white;
+  }
+}
+
+@mixin main-btn {
+  width: 6.0rem;
+  height: 2.4rem;
+  background-color: #ea6060;
+  border: none;
+  border-radius: 0.2rem 0.25rem 0.25rem 0.2rem;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: white;
+  transition: .3s;
+  &:hover {
+    color: #ea6060;
+    background: white;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, .4);
+  }
+  @media only screen and (max-width: 480px) {
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+  }
+  @media only screen and (max-width: 320px) {
+    width: 100%;
+  }
+}

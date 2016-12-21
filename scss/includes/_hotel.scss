@@ -1,0 +1,51 @@
+.hotel{
+  margin-top:1rem;
+  padding-top:2rem;
+  background: white;
+}
+
+.hotel__title{
+  font-size: 4rem;
+  text-align: center;
+}
+.hotel__descr{
+  display: block;
+  margin-bottom:3rem;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.hotel-form{
+  padding: 1rem;
+  width: 85%;
+  margin: 0 auto;
+  background: rgba(70, 94, 120, .7);
+  border-radius: 3px;
+}
+
+.hotel-form__list{
+  padding-left: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.hotel-form__items{
+  display: flex;
+  justify-content: space-between;
+}
+
+.hotel-form--date input{
+  @include decor-input;
+  margin-right:.5rem;
+  width: 18rem;
+}
+.hotel-form--number input{
+  @include decor-input;
+  margin-right:.5rem;
+  width: 4rem;
+}
+
+.hotel-form--btn{
+  @include main-btn;
+  width: 10rem;
+}
