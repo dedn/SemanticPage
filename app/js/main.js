@@ -3,23 +3,25 @@ $(document).ready(function () {
     $('#toggle').click(function () {
         $(this).toggleClass('active');
         $('nav').toggleClass('open');
-    });
+       });
 
     // Tabs
     var clickedTab = $(".tabs > .active");
     var tabWrapper = $(".tab-content");
+    var insetMenu = $(".tabs > li");
+    var insetContent = $(".tab-content > div");
     var activeTab = tabWrapper.find(".active");
     var activeTabHeight = activeTab.outerHeight();
     activeTab.show();
     tabWrapper.height(activeTabHeight);
-    $(".tabs > li").on("click", function () {
-        $(".tabs > li").removeClass("active");
+    $(insetMenu).on("click", function () {
+        $(insetMenu).removeClass("active");
         $(this).addClass("active");
         clickedTab = $(".tabs .active");
         activeTab.fadeOut(250, function () {
-            $(".tab-content > li").removeClass("active");
+            $(insetContent).removeClass("active");
             var clickedTabIndex = clickedTab.index();
-            $(".tab-content > li").eq(clickedTabIndex).addClass("active");
+            $(insetContent).eq(clickedTabIndex).addClass("active");
             activeTab = $(".tab-content > .active");
             activeTabHeight = activeTab.outerHeight();
             tabWrapper.stop().delay(50).animate({
@@ -41,17 +43,22 @@ $(document).ready(function () {
         $(".bg-color").css("background-color", newColor);
         $(".text-color").css("color", newColor);
     });
-});
 
-$(document).ready(function(){
-    $('.communication-menu__item--active').hover(
+    var activBtn = $(".communication-menu__item--active");
+
+    $(activBtn).hover(
         function() {
-            $( this ).removeClass('communication-menu__item--active');
+            $( this ).removeClass($(activBtn));
         }, function() {
-            $( this ).addClass('communication-menu__item--active');
+            $( this ).addClass($(activBtn));
         }
     );
+
 });
+
+
+
+
 
 
 
